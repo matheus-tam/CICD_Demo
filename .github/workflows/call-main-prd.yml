@@ -1,4 +1,4 @@
-name: Call Main CiCd
+name: Call Main CiCd Prod
 run-name: ${{ github.actor }} has launched the ${{ github.head_ref || github.ref_name }} pipeline for commit ${{github.sha}}
 on:
   push:
