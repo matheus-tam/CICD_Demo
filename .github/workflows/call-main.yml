@@ -1,8 +1,8 @@
-name: Call Main CiCd Dev
+name: Call Main CiCd
 run-name: ${{ github.actor }} has launched the ${{ github.head_ref || github.ref_name }} pipeline for commit ${{github.sha}}
 on:
   push:
-    branches: [ uat ]
+    branches: [ uat, prd ]
 jobs:
   download-latest-code:
     runs-on: windows-latest
@@ -24,6 +24,7 @@ jobs:
       environment: ${{ github.head_ref || github.ref_name }}
       folder_dev: Shared # Modify this to add your folder name <<<---
       folder_uat: Shared # Modify this to add your folder name <<<---
+      folder_prod: Shared # Modify this to add your folder name <<<---
     secrets:
       CLIENT_ID: ${{ secrets.CLIENT_ID }}
       CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
