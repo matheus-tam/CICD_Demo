@@ -5,7 +5,7 @@ on:
     branches: [ uat, prd ]
 jobs:
   download-latest-code:
-    runs-on: windows-latest
+    runs-on: uipath-cli
     env:
       BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
     steps:
