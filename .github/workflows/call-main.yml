@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Checkout the latest version of the current repo
         uses: actions/checkout@v3
-      - name: List files in the folder
+      - name: List files in folder
         shell: pwsh
         run: dir
       - name: Display SHA of commit
