@@ -24,7 +24,7 @@ jobs:
       environment: ${{ github.head_ref || github.ref_name }}
       folder_dev: Shared # Modify this to add your folder name <<<---
       folder_uat: Shared # Modify this to add your folder name <<<---
-      folder_prod: Shared # Modify this to add your folder name <<<---
+      folder_prd: Shared # Modify this to add your folder name <<<---
     secrets:
       CLIENT_ID: ${{ secrets.CLIENT_ID }}
       CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
