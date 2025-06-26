@@ -3,7 +3,7 @@ name: Repository Setup
 on:
   create:
     branches:
-      - test
+      - prd
 
 jobs:
   setup_repo:
